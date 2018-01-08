@@ -15,31 +15,37 @@
 .grid0 {
   display: grid; }
 
-/* Example 1: set up a grid */
+/* Example 1 */
 .grid1 {
   display: grid;
   grid-template-columns: 200px 200px 200px; }
 
-
+/* Example 2 */
 .grid2 {
   display: grid;
   grid-template-columns: 200px 200px 200px;
   grid-template-rows: 200px 100px; }
+
 .grid3 {
   display: grid;
   grid-template-columns: 200px 200px 200px;
   grid-template-rows: 200px 100px;
-  grid-auto-rows: 150px;
-  grid-column-gap: 20px;
-  grid-row-gap: 20px; }
+  grid-auto-rows: 75px; }
+
 .grid4 {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 200px 100px;
+  grid-auto-rows: 75px;
+  grid-column-gap: 20px; }
+
+.grid5 {
   /* same as grid3 */
   display: grid;
   grid-template-columns: 200px 200px 200px;
   grid-template-rows: 200px 100px;
-  grid-auto-rows: 150px;
-  grid-gap: 20px;
-}
+  grid-auto-rows: 75px;
+  grid-gap: 20px; }
 
 /* frUnit class items - fraction unit/reponsive tracks */
 .gridfr {

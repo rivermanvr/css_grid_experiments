@@ -8,12 +8,12 @@
   </head>
   <body>
     <h2>CSS Grid experiments</h2>
-    <h3>Creating a grid with CSS grid:</h3>
+    <h4>Creating a grid with CSS grid:</h4>
     <p>Have a div with a class of grid with 8 divs inside of it.</p>
     <p>To make a grid, use a new value for the display property of grid.</p>
     <p>There is no apparent difference from a regular div yet</p>
-    <p>Example 1:</p>
-    <div id="root" class="grid grid0">
+    <p>Example 0:</p>
+    <div class="grid grid0">
       <div>1</div>
       <div>2</div>
       <div>3</div>
@@ -26,11 +26,10 @@
 
     <br />
     <hr />
-    <h4>Creating a grid with CSS grid:</h4>
-    <p>Have a div with a class of grid with 8 divs inside of it.</p>
-    <p>To make a grid, use a new value for the display property of grid.</p>
-    <p>Example 2:</p>
-    <div id="root" class="grid">
+    <h4>three 200 px columns:</h4>
+    <p>grid-template-columns: 200px 200px 200px;</p>
+    <p>Example 1:</p>
+    <div class="grid grid1">
       <div>1</div>
       <div>2</div>
       <div>3</div>
@@ -40,6 +39,110 @@
       <div>7</div>
       <div>8</div>
     </div>
+
+    <br />
+    <hr />
+    <h4>three 200 px columns, with 2 explicit rows added:</h4>
+    <p>grid-template-columns: 200px 200px 200px;</p>
+    <p>grid-template-rows: 200px 100px;</p>
+    <p>Example 2:</p>
+    <div class="grid grid2">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+    </div>
+
+    <br />
+    <hr />
+    <h4>three 200 px columns, with 2 explicit rows added,</h4>
+    <h4>making any auto rows size at 75px</h4>
+    <p>grid-template-columns: 200px 200px 200px;</p>
+    <p>grid-template-rows: 200px 100px;</p>
+    <p>  grid-auto-rows: 75px;</p>
+    <p>Example 3:</p>
+    <div class="grid grid3">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+    </div>
+
+    <br />
+    <hr />
+    <h4>three 200 px columns, with 2 explicit rows added,</h4>
+    <h4>making any auto rows size at 75px,</h4>
+    <h4>put in a column gap of 20 px</h4>
+    <p>grid-template-columns: 200px 200px 200px;</p>
+    <p>grid-template-rows: 200px 100px;</p>
+    <p>grid-auto-rows: 75px;</p>
+    <p>grid-column-gap: 20px;</p>
+    <p>Example 4:</p>
+    <div class="grid grid4">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+    </div>
+
+    <br />
+    <hr />
+    <h4>three 200 px columns, with 2 explicit rows added,</h4>
+    <h4>making any auto rows size at 75px,</h4>
+    <h4>put in a grid (can do it separately too - row & column) gap of 20 px</h4>
+    <p>grid-template-columns: 200px 200px 200px;</p>
+    <p>grid-template-rows: 200px 100px;</p>
+    <p>grid-auto-rows: 75px;</p>
+    <p>grid-gap: 20px;</p>
+    <p>Example 5:</p>
+    <div class="grid grid5">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+    </div>
+
+
+    <br />
+    <hr />
+    <h3>the fr unit</h3>
+    <hr />
+    <h4>three 200 px columns, with 2 explicit rows added,</h4>
+    <h4>making any auto rows size at 75px,</h4>
+    <h4>put in a grid (can do it separately too - row & column) gap of 20 px</h4>
+    <p>grid-template-columns: 200px 200px 200px;</p>
+    <p>grid-template-rows: 200px 100px;</p>
+    <p>grid-auto-rows: 75px;</p>
+    <p>grid-gap: 20px;</p>
+    <p>Example 5:</p>
+    <div class="grid grid5">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+    </div>
+
+
 
 
 
