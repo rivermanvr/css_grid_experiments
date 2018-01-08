@@ -45,7 +45,9 @@
   grid-template-columns: 200px 200px 200px;
   grid-template-rows: 200px 100px;
   grid-auto-rows: 75px;
-  grid-gap: 20px; }
+  grid-gap: 20px;
+}
+
 
 /* frUnit class items - fraction unit/reponsive tracks */
 .gridfr {
@@ -61,6 +63,7 @@
   grid-template-columns: 2fr 1fr 225px;
   grid-gap: 20px; }
 
+  
   /* repeating notation */
 .gridrn {
   display: grid;
