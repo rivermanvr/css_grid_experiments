@@ -1,0 +1,68 @@
+* {box-sizing: border-box;}
+
+/* simpleGrid items */
+.grid div {
+  border: 1px solid rgb(0,95,107);
+  border-radius: 3 px;
+  background-color: rgba(0,95,107,0.8);
+  padding: 0.2em;
+  color: #fff;
+  font-size: 120%; }
+.grid1 {
+  display: grid;
+  grid-template-columns: 200px 200px 200px; }
+.grid2 {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 200px 100px; }
+.grid3 {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 200px 100px;
+  grid-auto-rows: 150px;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px; }
+.grid4 {
+  /* same as grid3 */
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 200px 100px;
+  grid-auto-rows: 150px;
+  grid-gap: 20px;
+}
+
+/* frUnit class items - fraction unit/reponsive tracks */
+.gridfr {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px; }
+.gridfr2 {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-gap: 20px;}
+.gridfr3 {
+  display: grid;
+  grid-template-columns: 2fr 1fr 225px;
+  grid-gap: 20px; }
+
+  /* repeating notation */
+.gridrn {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px; }
+
+  .gridrn2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr 2fr);
+    grid-gap: 20px; }
+
+  .gridrn3 {
+    display: grid;
+    grid-template-columns: 50px repeat(2, 1fr 2fr) 50px;
+    grid-gap: 20px; }
+
+  /* auto placement */
+  .gridauto {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px; }
