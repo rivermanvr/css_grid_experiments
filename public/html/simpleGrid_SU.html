@@ -177,16 +177,11 @@
       <div>8</div>
     </div>
 
-    <br />
     <hr />
-    <h3>Repeat Notation/Syntax</h3>
-    <hr />
-    <h4>three flexible responsive columns</h4>
-    <h4>with a gap of 20 px</h4>
-    <p>grid-template-columns: repeat(3, 1fr);</p>
+    <p>grid-template-columns: repeat(2, 1fr 2fr);</p>
     <p>grid-gap: 20px;</p>
-    <p>Example rn-1:</p>
-    <div class="grid gridfr">
+    <p>Example rn-2:</p>
+    <div class="grid gridrn2">
       <div>1</div>
       <div>2</div>
       <div>3</div>
@@ -197,12 +192,237 @@
       <div>8</div>
     </div>
 
+    <hr />
+    <p>grid-template-columns: 100px repeat(2, 1fr 2fr);</p>
+    <p>grid-gap: 20px;</p>
+    <p>Example rn-3:</p>
+    <div class="grid gridrn3">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+    </div>
 
+<!-- ----------------------------------------------------- -->
 
+    <br />
+    <hr />
+    <h3>Grid Auto Placement & Order</h3>
+    <hr />
+    <p>
+      <pre>
+        Positions the grid:
+          .gridauto {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-flow: column;
+            grid-gap: 20px; }
+      </pre>
+    </p>
+    <p>
+      <pre>
+        Puts items in the grid:
+          --not doing anything here yet--
+      </pre>
+    </p>
+    <p>Example auto1:</p>
+    <div class="grid gridauto">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+    </div>
 
+    <hr />
+    <p>
+      <pre>
+        Positions the grid:
 
+          .gridauto2 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 100px 100px 100px;
+            grid-auto-flow: column;
+            grid-gap: 20px; }
+      </pre>
+    </p>
+    <p>
+      <pre>
+        Puts items in the grid:
+          auto-flow changed how the grid populated.
+          We specified by column.
+      </pre>
+    </p>
+    <p>Example auto2:</p>
+    <div class="grid gridauto2">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+    </div>
 
+    <hr />
+    <p>
+      <pre>
+        Defines the grid characteristics
 
+          .gridAuto div {
+            border: 1px solid rgb(0,95,107);
+            border-radius: 3 px;
+            background-color: rgba(0,95,107,0.8);
+            padding: 0.2em;
+            color: #fff;
+            font-size: 120%; }
+
+          .gridauto2 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 100px 100px 100px;
+            grid-auto-flow: column;
+            grid-gap: 20px; }
+      </pre>
+    </p>
+    <p>
+      <pre>
+        Puts child 2 and 6 in the grid as defined, but after
+        all other items are put in the grid.  Notice where they fall below:
+
+          .gridAuto div:nth-child(2) {
+            order: 1;
+          }
+          
+          .gridAuto div:nth-child(6) {
+            order: 2;
+          }
+      </pre>
+    </p>
+    <p>Example auto3:</p>
+    <div class="gridAuto gridauto2">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+    </div>
+
+    <hr />
+    <p>
+      <pre>
+        Defines the grid characteristics
+        order: 3 means that the third position of the grid will
+        be filled with data that has not been assigned (in order)
+        ordered items go first this time around.
+
+          .gridAutoX div {
+            order: 3;
+            border: 1px solid rgb(0,95,107);
+            border-radius: 3 px;
+            background-color: rgba(0,95,107,0.8);
+            padding: 0.2em;
+            color: #fff;
+            font-size: 120%; }
+
+          .gridauto2 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 100px 100px 100px;
+            grid-auto-flow: column;
+            grid-gap: 20px; }
+      </pre>
+    </p>
+    <p>
+      <pre>
+        Puts child 2 and 6 in the grid as defined, this time before
+        all other items are put in the grid.  Notice where they fall below:
+
+          .gridAutoX div:nth-child(2) {
+            order: 1;
+          }
+          
+          .gridAutoX div:nth-child(6) {
+            order: 2;
+          }
+      </pre>
+    </p>
+    <p>Example auto4:</p>
+    <div class="gridAutoX gridauto2">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+    </div>
+
+    <hr />
+    <p>
+      <pre>
+        Defines the grid characteristics
+        order: 3 means that the third position of the grid will
+        be filled with data that has not been assigned (in order)
+        ordered items go first this time around.
+
+          .gridAutoX div {
+            order: 3;
+            border: 1px solid rgb(0,95,107);
+            border-radius: 3 px;
+            background-color: rgba(0,95,107,0.8);
+            padding: 0.2em;
+            color: #fff;
+            font-size: 120%; }
+
+          Move the cell input to the horizontal rows. 
+
+          .gridauto3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 100px 100px 100px;
+            grid-auto-flow: row;
+            grid-gap: 20px; }
+      </pre>
+    </p>
+    <p>
+      <pre>
+        Puts child 2 and 6 in the grid as defined, this time before
+        all other items are put in the grid.  Notice where they fall below:
+
+          .gridAutoX div:nth-child(2) {
+            order: 1;
+          }
+          
+          .gridAutoX div:nth-child(6) {
+            order: 2;
+          }
+      </pre>
+    </p>
+    <p>Example auto4:</p>
+    <div class="gridAutoX gridauto3">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+    </div>
 
 
 
