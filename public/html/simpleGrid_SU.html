@@ -8,23 +8,45 @@
   </head>
   <body>
     <h2>CSS Grid experiments</h2>
+<!-- ----------------------------------------------------- -->
+    <hr />
     <h4>Creating a grid with CSS grid:</h4>
     <p>Have a div with a class of grid with 8 divs inside of it.</p>
     <p>To make a grid, use a new value for the display property of grid.</p>
     <p>There is no apparent difference from a regular div yet</p>
-    <p>Example 0:</p>
-    <div class="grid grid0">
-      <div>1</div>
-      <div>2</div>
-      <div>3</div>
-      <div>4</div>
-      <div>5</div>
-      <div>6</div>
-      <div>7</div>
-      <div>8</div>
-    </div>
+    <pre>
+        -- HTML --
+        div class="grid grid0"
+          div 1 /div
+          div 2 /div
+          div 3 /div
+          div 4 /div
+          div 5 /div
+          div 6 /div
+          div 7 /div
+          div 8 /div
+        /div
 
-    <br />
+        -- CSS --
+        /* Set up the display characteristics for the internal divs */
+        .grid div {
+          border: 1px solid rgb(0,95,107);
+          border-radius: 3 px;
+          background-color: rgba(0,95,107,0.8);
+          padding: 0.2em;
+          color: #fff;
+          font-size: 120%; }
+        
+        /* Example 0: set up a grid */
+        .grid0 {
+          display: grid; }
+    </pre>
+    <div class="grid grid0">
+      <div>1</div><div>2</div><div>3</div><div>4</div>
+      <div>5</div><div>6</div><div>7</div><div>8</div>
+    </div>
+<!-- ----------------------------------------------------- -->
+    <br /><br />
     <hr />
     <h4>three 200 px columns:</h4>
     <p>grid-template-columns: 200px 200px 200px;</p>
