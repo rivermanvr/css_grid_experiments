@@ -22,6 +22,11 @@
   },
   "homepage": "https://github.com/rivermanvr/css_grid_experiments#readme",
   "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
     "chalk": "^2.3.0",
     "http": "0.0.0",
     "path": "^0.12.7",
