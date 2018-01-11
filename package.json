@@ -1,7 +1,7 @@
 {
   "name": "css_grid",
   "version": "1.0.0",
-  "description": "",
+  "description": "experimenting with CSS grid",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
