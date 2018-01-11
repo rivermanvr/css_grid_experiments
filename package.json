@@ -8,7 +8,7 @@
     "postinstall": "npm run webpack & build:css",
     "build:css": "node-sass -w -r public/css/scss -o public/css",
     "webpack": "./node_modules/webpack/bin/webpack.js",
-    "start:dev": "webpack -- -w & nodemon --ignore src/ --ignore dist/ server.js"
+    "start:dev": "npm run webpack -- -w & nodemon --ignore src/ --ignore dist/ server.js"
   },
   "repository": {
     "type": "git",
