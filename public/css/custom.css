@@ -1,0 +1,16 @@
+/* testing font types */
+.times90 {
+  font-size: 90px;
+  font-family: 'Times New Roman', Times, serif; }
+
+.fantasy90 {
+  font-size: 90px;
+  font-family: fantasy; }
+
+.georgia90 {
+  font-size: 90px;
+  font-family: Georgia, 'Times New Roman', Times, serif; }
+
+.franklin90 {
+  font-size: 90px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
