@@ -17,4 +17,14 @@ app.get('/', (req, res, next) => {
   res.sendFile(path.join(__dirname, 'public/index.html'));
 })
 
+app.use((req, res, next) => {
+  const error = new Error('page not found');
+  error.status = 404;
+  next(error);
+});
+
+app.use((err, req, res, next) => {
+  res.status(err.status || 500);
+});
+
 module.exports = app;
